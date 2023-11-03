@@ -1,0 +1,40 @@
+<p-card>
+    <div class="text-center">
+        <h1>
+            Experiences
+        </h1>
+    </div>
+</p-card>
+
+<p></p>
+
+<div class="grid">
+    <div class="col center-card">
+        <p-card header="Teaching Assistant" subheader="4 months" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/tamu-box-logo.png" style="max-width:80%; width:100%;" class="center">
+            </ng-template>
+            <p>I taught an intro to engineering class which uses Python as a way to teach students how to think critically from a development mindset. I instructed students on the basics of Python programming. In order to accomplish this, I had to diagnose and debug students' assignments.</p>
+            <ng-template pTemplate="footer">
+                <!-- <p-button label="Learn More" icon="pi pi-angle-right"></p-button> -->
+                <p-chart type="pie" [data]="tamu_teaching" [style]="{'width': '40%'}"></p-chart>
+            </ng-template>
+        </p-card>
+    </div>
+
+    <div class="col center-card">
+        <p-card header="NVIDIA Certified Machine Learning Intructor" subheader="1 month" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/nvidia-logo.png" style="max-width:80%; width:100%" class="center">
+            </ng-template>
+            <p>I instructed attendees on the basics of machine learning using the Nvidia API. I also worked a team of five volunteers in order to instruct a room of 100 attendees.</p>
+            <ng-template pTemplate="footer">
+                <!-- <p-button label="Learn More" icon="pi pi-angle-right"></p-button> -->
+                <p-chart type="pie" [data]="nvidia_ml" [style]="{'width': '40%'}"></p-chart>
+            </ng-template>
+        </p-card>
+    </div>
+</div>
+<p class="text-center">
+    <iframe src="assets/Resume.pdf" style="width:50%; height:600px;" frameborder="0"></iframe>
+</p>

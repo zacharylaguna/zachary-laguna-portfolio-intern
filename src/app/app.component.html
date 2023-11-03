@@ -1,0 +1,22 @@
+<p-menubar [model]="items">
+  <!-- <ng-template pTemplate="start">
+      <img src="assets/showcase/images/primeng.svg" height="40" class="p-mr-2">
+  </ng-template> -->
+  <ng-template pTemplate="end">
+      <!-- <input type="text" pInputText placeholder="Search"> -->
+      Zachary Laguna
+  </ng-template>
+</p-menubar>
+
+
+<div class="container">
+  <!-- <span *ngFor="let item of items">
+    <a routerLinkActive="active" [routerLink]="item.url">{{item.label}}</a> |
+  </span> -->
+  <p style="visibility: hidden;">space</p>
+  <router-outlet></router-outlet>
+</div>
+
+<div class="fixed">
+  <button pButton (click)="goToLink('https://github.com/zacharylaguna')" label="GitHub" type="button" icon="pi pi-github" class="p-button-rounded" style="margin: 10px;"></button>
+</div>

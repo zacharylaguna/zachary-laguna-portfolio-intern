@@ -1,0 +1,141 @@
+<!-- <p>projects works!</p> -->
+<!-- Lyricretriever-env.eba-ftppkhi3.us-east-2.elasticbeanstalk.com  -->
+<!-- <button pButton (click)="goToLink('http://3.20.71.118:5000/')" type="button" icon="pi pi-volume-up" class="p-button-rounded" style="margin: 10px;"></button> -->
+<p-card>
+    <div class="text-center">
+        <h1>
+            Projects
+        </h1>
+        <p>
+            Welcome to my projects page! The code for these projects can be found on my github. All live demos are hosted on AWS Cloud.
+        </p>
+        <button pButton (click)="goToLink('https://github.com/zacharylaguna')" label="GitHub" type="button" icon="pi pi-github" class="p-button-rounded" style="margin: 10px;"></button>
+    </div>
+</p-card>
+
+<p></p>
+
+<div class="grid">
+    <div class="col center-card">
+        <p-card header="GordoBot" subheader="Spring 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/gordobot.png" style="max-width:60%; width:100%;" class="center">
+            </ng-template>
+            <p> GordoBot is an innovative robot designed for efficient ingredient dispensing in kitchens and laboratories. Its advanced technology and user-friendly interface allow users to interact and customize settings easily using the Spring API and Angular-based user interface. Whether you're a professional chef, food scientist, or a cooking enthusiast, GordoBot simplifies ingredient dispensing and enhances recipe quality. </p>
+            <p-accordion>
+                <p-accordionTab header="Skills">
+                    <ul>
+                        <li>Project Management</li>
+                        <li>Teamwork</li>
+                        <li>Angular</li>
+                        <li>Spring API </li>
+                        <li>Raspberry Pi</li>
+                        <li>Python</li>
+                        <li>Robotics</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
+            <ng-template pTemplate="footer">
+                <button pButton (click)="goToLink('https://powerful-dime-53d.notion.site/GordoBot-9699aee0c6364ba8a0b365d361d71837')" type="button" label="Docs" icon="pi pi-book"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/gordobot')" type="button" label="" icon="pi pi-github"></button>
+            </ng-template>
+        </p-card>
+    </div>
+    <div class="col center-card">
+        <p-card header="Lyric Retriever" subheader="Spring 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/music-note.png" style="max-width:60%; width:100%;" class="center">
+            </ng-template>
+            <p> Do you have a song stuck in your head? One where the name is at the tip of your tongue? Find it using this lyric tool! Type the most prominent lyrics within a song and find the title (uses an outdated dataset)</p>
+            <p-accordion>
+                <p-accordionTab header="Example Inputs">
+                    <ul>
+                        <li>in my heart</li>
+                        <li>single ladies</li>
+                        <li>so sad the renegade elton john</li>
+                        <li>renegade eminem</li>
+                    </ul>
+                </p-accordionTab>
+                <p-accordionTab header="Skills">
+                    <ul>
+                        <li>Flask</li>
+                        <li>BM25 Scoring Algorithm</li>
+                        <li>Python</li>
+                        <li>Hosted on AWS</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
+            <ng-template pTemplate="footer">
+                <button pButton (click)="goToLink('http://3.20.71.118:5000/')" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/lyric-retriever')" type="button" label="" icon="pi pi-github"></button>
+
+            </ng-template>
+        </p-card>
+    </div>
+    <div class="col center-card">
+        <p-card header="Real Mgmt" subheader="Summer 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/real-mgmt.png" style="max-width:60%; width:100%;" class="center">
+            </ng-template>
+            <p> Manage your real estate properties with this online tool! </p>
+
+            <p-accordion>
+                <p-accordionTab header="Example Inputs">
+                    <p> Manager </p>
+                    <ul>
+                        <li>Username: inewton</li>
+                        <li>Password: 123</li>
+                    </ul>
+                    <p> Tenant </p>
+                    <ul>
+                        <li>Username: cdarwin</li>
+                        <li>Password: 123</li>
+                    </ul>
+                    <p> Contractor </p>
+                    <ul>
+                        <li>Username: kjenson</li>
+                        <li>Password: 123</li>
+                    </ul>
+                </p-accordionTab>
+                <p-accordionTab header="Skills">
+                    <ul>
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>SQL</li>
+                        <li>REST API</li>
+                        <li>Hosted on AWS</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
+            <ng-template pTemplate="footer">
+                <button pButton (click)="goToLink('http://3.17.248.106:3000/')" type="button" label="Live Demo" icon="pi pi-angle-right"></button>
+                <button pButton (click)="goToLink('https://powerful-dime-53d.notion.site/Real-MGMT-d9d4c83d92214c9f82fa124dfec9f235')" type="button" label="Docs" icon="pi pi-book"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/real-mgmt')" type="button" label="" icon="pi pi-github"></button>
+            </ng-template>
+        </p-card>
+    </div>
+    <div class="col center-card">
+        <p-card header="Baby AI Monitor" subheader="Fall 2022" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/baby-ai-monitor.png" style="max-width:60%; width:100%;" class="center">
+            </ng-template>
+            <p> Monitor your baby from any device! Get real time updates in and make sure your baby is safe from anywhere in the world. </p>
+            <p-accordion>
+                <p-accordionTab header="Skills">
+                    <ul>
+                        <li>Flask</li>
+                        <li>OpenCV</li>
+                        <li>Computer Vision</li>
+                        <li>Python</li>
+                    </ul>
+                </p-accordionTab>
+            </p-accordion>
+            <ng-template pTemplate="footer">
+                <button pButton (click)="goToLink('https://drive.google.com/drive/folders/11k6lYF7ScDIxzzvbVaWI3ZNNwwv0Py6N?usp=sharing')" type="button" label="Docs" icon="pi pi-book"></button>
+                <button pButton (click)="goToLink('https://github.com/zacharylaguna/baby-ai-monitor')" type="button" label="" icon="pi pi-github"></button>
+            </ng-template>
+        </p-card>
+    </div>
+</div>
+
+<p style="visibility: hidden;">Zachary Laguna</p>
